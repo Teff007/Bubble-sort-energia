@@ -8,7 +8,7 @@
 | Integrante | Responsabilidade | Arquivos |
 |---|---|---|
 | STÉFFANY | Programa principal e integração | `main.c` |
-| Nome da Pessoa 2 | Dados | `dados.c`, `dados.h` |
+| HELENA | Dados | `dados.c`, `dados.h` |
 | Nome da Pessoa 3 | Algoritmo Bubble Sort | `bubble.c`, `bubble.h` |
 | Nome da Pessoa 4 | Interface no terminal | `interface.c`, `interface.h` |
 
