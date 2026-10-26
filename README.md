@@ -22,7 +22,7 @@
 |---|---|---|
 | Stéffany | Programa principal e integração | `main.c` |
 | Helena | Dados | `dados.c`, `dados.h` |
-| Nome da Pessoa 3 | Algoritmo Bubble Sort | `bubble.c`, `bubble.h` |
+| Ana Beatriz | Algoritmo Bubble Sort | `bubble.c`, `bubble.h` |
 | Safira | Interface no terminal | `interface.c`, `interface.h` |
 
 ---
