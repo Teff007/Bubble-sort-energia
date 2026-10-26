@@ -1,8 +1,4 @@
 /*
- * Projeto: Bubble Sort - Controle de Consumo de Energia
- * Arquivo: main.c
- * Responsavel: Pessoa 1
- *
  * Fluxo do programa:
  *  1. Mostra o cabecalho
  *  2. Carrega os dados dos equipamentos
