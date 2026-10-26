@@ -10,7 +10,7 @@
 | STÉFFANY | Programa principal e integração | `main.c` |
 | HELENA | Dados | `dados.c`, `dados.h` |
 | Nome da Pessoa 3 | Algoritmo Bubble Sort | `bubble.c`, `bubble.h` |
-| Nome da Pessoa 4 | Interface no terminal | `interface.c`, `interface.h` |
+| SAFIRA | Interface no terminal | `interface.c`, `interface.h` |
 
 
 É possível rodar no OnlineGDB, criando os arquivos `.c` e `.h` do projeto no mesmo ambiente.
