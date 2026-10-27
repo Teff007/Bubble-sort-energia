@@ -84,9 +84,9 @@ gcc main.c dados.c bubble.c interface.c -o consumo
 <!-- Pessoa 4: complete esta seção -->
 
 
-### Módulo de Interface (interface.c / interface.h)
+### **Safira** 
+Módulo de Interface (interface.c / interface.h) 
 
-**Safira** 
 
 Este módulo cuida de tudo o que aparece na tela (terminal). Ele não ordena nem
 guarda dados, só mostra as informações de forma clara e organizada para o usuário.
