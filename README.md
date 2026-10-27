@@ -84,7 +84,7 @@ gcc main.c dados.c bubble.c interface.c -o consumo
 <!-- Pessoa 4: complete esta seção -->
 
 
-## Módulo de Interface (interface.c / interface.h)
+### Módulo de Interface (interface.c / interface.h)
 
 **Safira** 
 
@@ -97,12 +97,12 @@ guarda dados, só mostra as informações de forma clara e organizada para o usu
 
 ### Funções implementadas
 
-| Função | O que faz |
-|---|---|
-| exibirCabecalho() | Mostra o título do programa e explica o problema (descobrir quais eletrodomésticos consomem mais energia). |
-| exibirCriterio() | Informa ao usuário que a ordenação é decrescente (do maior para o menor consumo). |
-| exibirTabela() | Mostra a lista de equipamentos com o consumo em kWh. É usada duas vezes: antes e depois da ordenação. |
-| exibirResumo() | Encontra e mostra o equipamento de maior e o de menor consumo. |
+ Função 
+
+ exibirCabecalho()  Mostra o título do programa e explica o problema (descobrir quais eletrodomésticos consomem mais energia). 
+ exibirCriterio()  Informa ao usuário que a ordenação é decrescente (do maior para o menor consumo). 
+ exibirTabela()  Mostra a lista de equipamentos com o consumo em kWh. É usada duas vezes: antes e depois da ordenação. 
+ exibirResumo()  Encontra e mostra o equipamento de maior e o de menor consumo. 
 
 ### Como funciona
 - **exibirTabela** recebe o array de nomes, o array de consumos, a quantidade de
