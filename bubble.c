@@ -23,7 +23,27 @@ void bubbleSort(char nomes[][30], float consumo[], int n) {
      // Laco interno: compara elementos ADJACENTES (j e j + 1).
      // A cada passada, o ultimo elemento ja esta no lugar certo,
      // entao o limite diminui em i (n - 1 - i).
-     
+
         for (int j = 0; j < n - 1 - i; j++) {
         }
+
+         // Comparacao: se o da esquerda for MENOR que o da direita,
+         // eles estao fora de ordem para o criterio decrescente.
+
+            if (consumo[j] < consumo[j + 1]) {
+
+                // Troca dos consumos usando uma variavel auxiliar
+
+                auxConsumo = consumo[j];
+                consumo[j] = consumo[j + 1];
+                consumo[j + 1] = auxConsumo;
+
+                // Troca dos nomes, para manter os arrays alinhados
+
+                strcpy(auxNome, nomes[j]);
+                strcpy(nomes[j], nomes[j + 1]);
+                strcpy(nomes[j + 1], auxNome);
+
+                trocou = 1; // registra que houve troca nesta passada
+            }
 
