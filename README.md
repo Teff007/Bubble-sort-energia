@@ -69,19 +69,93 @@ gcc main.c dados.c bubble.c interface.c -o consumo
 
 ##  Funcionamento do Bubble Sort
 
-<!-- Pessoa 3: complete esta seção -->
+O Bubble Sort (ordenação por bolha) é um algoritmo de ordenação que compara pares de elementos vizinhos de um array e troca os dois de lugar quando eles estão fora da ordem desejada. Esse processo se repete em várias passadas pelo array, até que todos os elementos estejam ordenados.
+
+Passo a passo do algoritmo
+Passada: o laço externo (i) controla as passadas. São no máximo n - 1.
+Comparação: o laço interno (j) compara consumo[j] com consumo[j + 1], ou seja, dois elementos adjacentes.
+Troca: se consumo[j] < consumo[j + 1], os dois estão fora de ordem para o critério decrescente e são trocados, usando uma variável auxiliar. O nome do equipamento também é trocado, para que os arrays continuem alinhados.
+Fim da passada: ao terminar uma passada, o menor valor restante já está no final do array. Por isso, a passada seguinte compara um elemento a menos (n - 1 - i).
+Parada antecipada: se uma passada inteira ocorrer sem nenhuma troca, o array já está ordenado e o algoritmo para antes do fim.
 
 ---
 
 ## Exemplo de Entrada e Saída
 
-<!-- Pessoa 4: complete esta seção -->
+Os dados dos 12 equipamentos estão definidos no código, em dados.c. Por isso, o programa não pede entrada do usuário: basta executá-lo.
+
+Entrada (dados carregados)
+Equipamento	Consumo mensal (kWh)
+
+Chuveiro Eletrico:	120.5
+Ar-Condicionado:	150.0
+Geladeira:	45.2
+Maquina de Lavar:	25.0
+Ferro de Passar:	15.5
+Micro-ondas:	12.0
+Televisao:	18.0
+Computador:	30.0
+Secador de Cabelo:	20.0
+Lampadas LED:	10.0
+Air Fryer:	35.4
+Cafeteira Eletrica:	14.2
+
+Saída no terminal
+=============================================
+ CONTROLE DE CONSUMO DE ENERGIA
+ Ordenacao com Bubble Sort
+=============================================
+Problema: descobrir quais eletrodomesticos
+consomem mais energia na conta de luz.
+
+Criterio de ordenacao: DECRESCENTE
+(do maior para o menor consumo)
+
+--- ANTES DA ORDENACAO ---
+ 1. Chuveiro Eletrico      120.5 kWh
+ 2. Ar-Condicionado        150.0 kWh
+ 3. Geladeira               45.2 kWh
+ 4. Maquina de Lavar        25.0 kWh
+ 5. Ferro de Passar         15.5 kWh
+ 6. Micro-ondas             12.0 kWh
+ 7. Televisao               18.0 kWh
+ 8. Computador              30.0 kWh
+ 9. Secador de Cabelo       20.0 kWh
+10. Lampadas LED            10.0 kWh
+11. Air Fryer               35.4 kWh
+12. Cafeteira Eletrica      14.2 kWh
+
+--- DEPOIS DA ORDENACAO ---
+ 1. Ar-Condicionado        150.0 kWh
+ 2. Chuveiro Eletrico      120.5 kWh
+ 3. Geladeira               45.2 kWh
+ 4. Air Fryer               35.4 kWh
+ 5. Computador              30.0 kWh
+ 6. Maquina de Lavar        25.0 kWh
+ 7. Secador de Cabelo       20.0 kWh
+ 8. Televisao               18.0 kWh
+ 9. Ferro de Passar         15.5 kWh
+10. Cafeteira Eletrica      14.2 kWh
+11. Micro-ondas             12.0 kWh
+12. Lampadas LED            10.0 kWh
+
+=============== RESUMO ===============
+Maior consumo: Ar-Condicionado (150.0 kWh)
+Menor consumo: Lampadas LED (10.0 kWh)
+Dica: priorize economizar nos maiores consumos!
+======================================
 
 ---
 
 ## Tecnologias Utilizadas
 
-<!-- Pessoa 4: complete esta seção -->
+Linguagem C: implementação integral do programa
+GCC: compilador usado para compilar e executar
+Git: controle de versão do projeto
+GitHub: hospedagem do repositório e Pull Requests
+GitHub Desktop: interface usada para commits, branches e push
+Visual Studio Code: editor de código
+OnlineGDB: alternativa online para compilar e testar o programa
 
 
 ### **Safira** 
