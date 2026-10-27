@@ -91,11 +91,11 @@ gcc main.c dados.c bubble.c interface.c -o consumo
 Este módulo cuida de tudo o que aparece na tela (terminal). Ele não ordena nem
 guarda dados, só mostra as informações de forma clara e organizada para o usuário.
 
-### Arquivos
+#### Arquivos
 - interface.h: lista (protótipos) das funções, para o main.c poder usá-las.
 - interface.c: código das funções.
 
-### Funções implementadas
+#### Funções implementadas
 
  Função 
 
@@ -104,7 +104,7 @@ guarda dados, só mostra as informações de forma clara e organizada para o usu
  exibirTabela()  Mostra a lista de equipamentos com o consumo em kWh. É usada duas vezes: antes e depois da ordenação. 
  exibirResumo()  Encontra e mostra o equipamento de maior e o de menor consumo. 
 
-### Como funciona
+#### Como funciona
 - **exibirTabela** recebe o array de nomes, o array de consumos, a quantidade de
   itens e um título. Um laço for percorre os itens e imprime uma linha para cada
   equipamento, com número, nome e consumo alinhados.
@@ -112,7 +112,7 @@ guarda dados, só mostra as informações de forma clara e organizada para o usu
   comparando cada valor com o maior e o menor encontrados até o momento,
   atualizando as posições quando necessário.
 
-### Tecnologias usadas neste módulo
+#### Tecnologias usadas neste módulo
 - Linguagem C, biblioteca stdio.h (função printf)
 - Estruturas de repetição (for) e condicionais (if)
 - Testado localmente com GCC no Visual Studio Code
