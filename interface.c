@@ -1,7 +1,4 @@
-Implementa funcoes de exibicao no terminal
-
-// interface.c - Interface no terminal
-// Responsavel: Safira
+// Implementa funcoes de exibicao no terminal
 
 #include <stdio.h>
 #include "interface.h"
