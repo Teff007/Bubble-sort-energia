@@ -18,14 +18,14 @@ void bubbleSort(char nomes[][30], float consumo[], int n) {
    // Sao no maximo n - 1 passadas.
 
     for (int i = 0; i < n - 1; i++) {
-        trocou = 0;}
+        trocou = 0;
 
      // Laco interno: compara elementos ADJACENTES (j e j + 1).
      // A cada passada, o ultimo elemento ja esta no lugar certo,
      // entao o limite diminui em i (n - 1 - i).
 
         for (int j = 0; j < n - 1 - i; j++) {
-        }
+        
 
          // Comparacao: se o da esquerda for MENOR que o da direita,
          // eles estao fora de ordem para o criterio decrescente.
@@ -46,4 +46,14 @@ void bubbleSort(char nomes[][30], float consumo[], int n) {
 
                 trocou = 1; // registra que houve troca nesta passada
             }
+        }
 
+        // Otimizacao: se uma passada inteira nao fez nenhuma troca,
+        // o array ja esta ordenado e podemos parar antes.
+        if (trocou == 0) {
+            break;
+        }
+    }
+}
+
+            
