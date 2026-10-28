@@ -101,10 +101,10 @@ Air Fryer:	35.4
 Cafeteira Eletrica:	14.2
 
 Saída no terminal
-=============================================
+---------------------------------------------
  CONTROLE DE CONSUMO DE ENERGIA
  Ordenacao com Bubble Sort
-=============================================
+---------------------------------------------
 Problema: descobrir quais eletrodomesticos
 consomem mais energia na conta de luz.
 
@@ -139,15 +139,15 @@ Criterio de ordenacao: DECRESCENTE
 11. Micro-ondas             12.0 kWh
 12. Lampadas LED            10.0 kWh
 
-=============== RESUMO ===============
+--------------- RESUMO ---------------
 Maior consumo: Ar-Condicionado (150.0 kWh)
 Menor consumo: Lampadas LED (10.0 kWh)
 Dica: priorize economizar nos maiores consumos!
-======================================
+--------------------------------------
 
 ---
 
-## Tecnologias Utilizadas
+# Tecnologias Utilizadas
 
 Linguagem C: implementação integral do programa
 GCC: compilador usado para compilar e executar
