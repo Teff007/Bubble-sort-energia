@@ -88,16 +88,27 @@ Entrada (dados carregados)
 Equipamento	Consumo mensal (kWh)
 
 Chuveiro Eletrico:	120.5
+
 Ar-Condicionado:	150.0
+
 Geladeira:	45.2
+
 Maquina de Lavar:	25.0
+
 Ferro de Passar:	15.5
+
 Micro-ondas:	12.0
+
 Televisao:	18.0
+
 Computador:	30.0
+
 Secador de Cabelo:	20.0
+
 Lampadas LED:	10.0
+
 Air Fryer:	35.4
+
 Cafeteira Eletrica:	14.2
 
 Saída no terminal
