@@ -1,22 +1,59 @@
-#  Bubble Sort - Controle de Consumo de Energia
+<div align="center">
 
-![Linguagem](https://img.shields.io/badge/linguagem-C-blue)
-![Algoritmo](https://img.shields.io/badge/algoritmo-Bubble%20Sort-orange)
-![Status](https://img.shields.io/badge/status-em%20desenvolvimento-yellow)
+# ⚡ Bubble Sort — Controle de Consumo de Energia
 
-**Disciplina:** Algoritmos e Pensamento Computacional
-**Professora:** Karla
+**Descubra quais eletrodomésticos são os maiores "vilões" da sua conta de luz.**
 
-##  Alunas
+![Linguagem C](https://img.shields.io/badge/Linguagem-C-00599C?style=for-the-badge&logo=c&logoColor=white)
+![Algoritmo](https://img.shields.io/badge/Algoritmo-Bubble%20Sort-FF6B35?style=for-the-badge&logo=thealgorithms&logoColor=white)
+![Compilador](https://img.shields.io/badge/Compilador-GCC-A42E2B?style=for-the-badge&logo=gnu&logoColor=white)
+![Status](https://img.shields.io/badge/Status-Em%20desenvolvimento-F1C40F?style=for-the-badge)
 
-- Ana Beatriz
-- Helena Botelho
-- Safira Assunção
+![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
+![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white)
+![VS Code](https://img.shields.io/badge/VS%20Code-007ACC?style=flat-square&logo=visualstudiocode&logoColor=white)
+![OnlineGDB](https://img.shields.io/badge/OnlineGDB-Compat%C3%ADvel-2E86C1?style=flat-square)
+![Plataforma](https://img.shields.io/badge/Plataforma-Terminal-4EAA25?style=flat-square&logo=gnubash&logoColor=white)
+![Contribuidoras](https://img.shields.io/badge/Contribuidoras-4-E91E63?style=flat-square&logo=github&logoColor=white)
+
+</div>
+
+---
+
+## 📚 Informações Acadêmicas
+
+| | |
+|---|---|
+| **Disciplina** | Algoritmos e Pensamento Computacional |
+| **Professora** | Karla |
+
+---
+
+## 📑 Sumário
+
+- [Alunas](#-alunas)
+- [Integrantes e Responsabilidades](#-integrantes-e-responsabilidades)
+- [Descrição do Problema](#-descrição-do-problema-cotidiano)
+- [Objetivo da Aplicação](#-objetivo-da-aplicação)
+- [Estrutura do Projeto](#-estrutura-do-projeto)
+- [Como Executar](#-como-executar)
+- [Funcionamento do Bubble Sort](#-funcionamento-do-bubble-sort)
+- [Exemplo de Entrada e Saída](#-exemplo-de-entrada-e-saída)
+- [Módulo de Interface](#-módulo-de-interface-interfacec--interfaceh)
+- [Tecnologias Utilizadas](#-tecnologias-utilizadas)
+
+---
+
+## 👩‍💻 Alunas
+
+- Ana Beatriz Oliveira de Assis
+- Helena Botelho de Moraes Costa
+- Safira Assunção de Carvalho
 - Stéffany Christiny Bezerra Rodrigues
 
 ---
 
-## Integrantes e Responsabilidades
+## 🤝 Integrantes e Responsabilidades
 
 | Integrante | Responsabilidade | Arquivos |
 |---|---|---|
@@ -27,19 +64,19 @@
 
 ---
 
-##  Descrição do Problema Cotidiano
+## 🏠 Descrição do Problema Cotidiano
 
 No dia a dia, muitas famílias enfrentam dificuldades para entender o impacto financeiro e energético de cada eletrodoméstico na conta de luz. Sem uma visualização clara de quais aparelhos consomem mais eletricidade, torna-se difícil planejar ações de economia ou uso consciente da energia em casa.
 
 ---
 
-##  Objetivo da Aplicação
+## 🎯 Objetivo da Aplicação
 
-Desenvolver um programa em linguagem C que armazene o consumo mensal (em kWh) de 12 equipamentos residenciais utilizando estruturas de dados adequadas. A aplicação serve de base para a aplicação do algoritmo Bubble Sort, permitindo organizar os dados de forma decrescente para identificar rapidamente os principais "vilões" do consumo de energia.
+Desenvolver um programa em linguagem C que armazene o consumo mensal (em kWh) de **12 equipamentos residenciais** utilizando estruturas de dados adequadas. A aplicação serve de base para o algoritmo **Bubble Sort**, permitindo organizar os dados de forma **decrescente** para identificar rapidamente os principais "vilões" do consumo de energia.
 
 ---
 
-## Estrutura do Projeto
+## 📁 Estrutura do Projeto
 
 ```
 .
@@ -54,11 +91,13 @@ Desenvolver um programa em linguagem C que armazene o consumo mensal (em kWh) de
 
 ---
 
-##  Como Executar
+## ▶️ Como Executar
+
+### Online
 
 É possível rodar o projeto no [OnlineGDB](https://www.onlinegdb.com/online_c_compiler), criando os arquivos `.c` e `.h` no mesmo ambiente e executando o `main.c`.
 
-Para compilar localmente com o GCC:
+### Localmente com GCC
 
 ```bash
 gcc main.c dados.c bubble.c interface.c -o consumo
@@ -67,55 +106,48 @@ gcc main.c dados.c bubble.c interface.c -o consumo
 
 ---
 
-##  Funcionamento do Bubble Sort
+## 🫧 Funcionamento do Bubble Sort
 
-O Bubble Sort (ordenação por bolha) é um algoritmo de ordenação que compara pares de elementos vizinhos de um array e troca os dois de lugar quando eles estão fora da ordem desejada. Esse processo se repete em várias passadas pelo array, até que todos os elementos estejam ordenados.
+O **Bubble Sort** (ordenação por bolha) compara pares de elementos vizinhos de um array e troca os dois de lugar quando estão fora da ordem desejada. Esse processo se repete em várias passadas pelo array, até que todos os elementos estejam ordenados.
 
-Passo a passo do algoritmo
-Passada: o laço externo (i) controla as passadas. São no máximo n - 1.
-Comparação: o laço interno (j) compara consumo[j] com consumo[j + 1], ou seja, dois elementos adjacentes.
-Troca: se consumo[j] < consumo[j + 1], os dois estão fora de ordem para o critério decrescente e são trocados, usando uma variável auxiliar. O nome do equipamento também é trocado, para que os arrays continuem alinhados.
-Fim da passada: ao terminar uma passada, o menor valor restante já está no final do array. Por isso, a passada seguinte compara um elemento a menos (n - 1 - i).
-Parada antecipada: se uma passada inteira ocorrer sem nenhuma troca, o array já está ordenado e o algoritmo para antes do fim.
+### Passo a passo
+
+1. **Passada:** o laço externo (`i`) controla as passadas. São no máximo `n - 1`.
+2. **Comparação:** o laço interno (`j`) compara `consumo[j]` com `consumo[j + 1]`, ou seja, dois elementos adjacentes.
+3. **Troca:** se `consumo[j] < consumo[j + 1]`, os dois estão fora de ordem para o critério decrescente e são trocados, usando uma variável auxiliar. O nome do equipamento também é trocado, para que os arrays continuem alinhados.
+4. **Fim da passada:** ao terminar uma passada, o menor valor restante já está no final do array. Por isso, a passada seguinte compara um elemento a menos (`n - 1 - i`).
+5. **Parada antecipada:** se uma passada inteira ocorrer sem nenhuma troca, o array já está ordenado e o algoritmo para antes do fim.
 
 ---
 
-## Exemplo de Entrada e Saída
+## 🧪 Exemplo de Entrada e Saída
 
-Os dados dos 12 equipamentos estão definidos no código, em dados.c. Por isso, o programa não pede entrada do usuário: basta executá-lo.
+Os dados dos 12 equipamentos estão definidos no código, em `dados.c`. Por isso, o programa **não pede entrada do usuário**: basta executá-lo.
 
-Entrada (dados carregados)
-Equipamento	Consumo mensal (kWh)
+### Entrada (dados carregados)
 
-Chuveiro Eletrico:	120.5
+| Equipamento | Consumo mensal (kWh) |
+|---|---:|
+| Chuveiro Elétrico | 120.5 |
+| Ar-Condicionado | 150.0 |
+| Geladeira | 45.2 |
+| Máquina de Lavar | 25.0 |
+| Ferro de Passar | 15.5 |
+| Micro-ondas | 12.0 |
+| Televisão | 18.0 |
+| Computador | 30.0 |
+| Secador de Cabelo | 20.0 |
+| Lâmpadas LED | 10.0 |
+| Air Fryer | 35.4 |
+| Cafeteira Elétrica | 14.2 |
 
-Ar-Condicionado:	150.0
+### Saída no terminal
 
-Geladeira:	45.2
-
-Maquina de Lavar:	25.0
-
-Ferro de Passar:	15.5
-
-Micro-ondas:	12.0
-
-Televisao:	18.0
-
-Computador:	30.0
-
-Secador de Cabelo:	20.0
-
-Lampadas LED:	10.0
-
-Air Fryer:	35.4
-
-Cafeteira Eletrica:	14.2
-
-Saída no terminal
----------------------------------------------
+```
+=============================================
  CONTROLE DE CONSUMO DE ENERGIA
  Ordenacao com Bubble Sort
----------------------------------------------
+=============================================
 Problema: descobrir quais eletrodomesticos
 consomem mais energia na conta de luz.
 
@@ -150,54 +182,64 @@ Criterio de ordenacao: DECRESCENTE
 11. Micro-ondas             12.0 kWh
 12. Lampadas LED            10.0 kWh
 
---------------- RESUMO ---------------
+=============== RESUMO ===============
 Maior consumo: Ar-Condicionado (150.0 kWh)
 Menor consumo: Lampadas LED (10.0 kWh)
 Dica: priorize economizar nos maiores consumos!
---------------------------------------
+======================================
+```
 
 ---
 
-# Tecnologias Utilizadas
+## 🖥️ Módulo de Interface (`interface.c` / `interface.h`)
 
-Linguagem C: implementação integral do programa
-GCC: compilador usado para compilar e executar
-Git: controle de versão do projeto
-GitHub: hospedagem do repositório e Pull Requests
-GitHub Desktop: interface usada para commits, branches e push
-Visual Studio Code: editor de código
-OnlineGDB: alternativa online para compilar e testar o programa
+**Responsável:** Safira
 
+Este módulo cuida de tudo o que aparece na tela (terminal). Ele não ordena nem guarda dados: apenas mostra as informações de forma clara e organizada para o usuário.
 
-### **Safira** 
-#### Módulo de Interface (interface.c / interface.h) 
+### Arquivos
 
+- `interface.h`: lista (protótipos) das funções, para o `main.c` poder usá-las.
+- `interface.c`: código das funções.
 
-Este módulo cuida de tudo o que aparece na tela (terminal). Ele não ordena nem
-guarda dados, só mostra as informações de forma clara e organizada para o usuário.
+### Funções implementadas
 
-#### Arquivos
-- interface.h: lista (protótipos) das funções, para o main.c poder usá-las.
-- interface.c: código das funções.
+| Função | Descrição |
+|---|---|
+| `exibirCabecalho()` | Mostra o título do programa e explica o problema (descobrir quais eletrodomésticos consomem mais energia). |
+| `exibirCriterio()` | Informa ao usuário que a ordenação é decrescente (do maior para o menor consumo). |
+| `exibirTabela()` | Mostra a lista de equipamentos com o consumo em kWh. É usada duas vezes: antes e depois da ordenação. |
+| `exibirResumo()` | Encontra e mostra o equipamento de maior e o de menor consumo. |
 
-#### Funções implementadas
+### Como funciona
 
- Função 
+- **`exibirTabela`** recebe o array de nomes, o array de consumos, a quantidade de itens e um título. Um laço `for` percorre os itens e imprime uma linha para cada equipamento, com número, nome e consumo alinhados.
+- **`exibirResumo`** guarda a posição do maior e do menor consumo. Percorre o array comparando cada valor com o maior e o menor encontrados até o momento, atualizando as posições quando necessário.
 
- exibirCabecalho()  Mostra o título do programa e explica o problema (descobrir quais eletrodomésticos consomem mais energia). 
- exibirCriterio()  Informa ao usuário que a ordenação é decrescente (do maior para o menor consumo). 
- exibirTabela()  Mostra a lista de equipamentos com o consumo em kWh. É usada duas vezes: antes e depois da ordenação. 
- exibirResumo()  Encontra e mostra o equipamento de maior e o de menor consumo. 
+### Tecnologias usadas neste módulo
 
-#### Como funciona
-- **exibirTabela** recebe o array de nomes, o array de consumos, a quantidade de
-  itens e um título. Um laço for percorre os itens e imprime uma linha para cada
-  equipamento, com número, nome e consumo alinhados.
-- **exibirResumo** guarda a posição do maior e do menor consumo. Percorre o array
-  comparando cada valor com o maior e o menor encontrados até o momento,
-  atualizando as posições quando necessário.
-
-#### Tecnologias usadas neste módulo
-- Linguagem C, biblioteca stdio.h (função printf)
-- Estruturas de repetição (for) e condicionais (if)
+- Linguagem C, biblioteca `stdio.h` (função `printf`)
+- Estruturas de repetição (`for`) e condicionais (`if`)
 - Testado localmente com GCC no Visual Studio Code
+
+---
+
+## 🛠️ Tecnologias Utilizadas
+
+| Tecnologia | Uso |
+|---|---|
+| **Linguagem C** | Implementação integral do programa |
+| **GCC** | Compilador usado para compilar e executar |
+| **Git** | Controle de versão do projeto |
+| **GitHub** | Hospedagem do repositório e Pull Requests |
+| **GitHub Desktop** | Interface usada para commits, branches e push |
+| **Visual Studio Code** | Editor de código |
+| **OnlineGDB** | Alternativa online para compilar e testar o programa |
+
+---
+
+<div align="center">
+
+Feito com 💙 por Ana Beatriz, Helena, Safira e Stéffany
+
+</div>
